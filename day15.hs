@@ -11,3 +11,9 @@ find2020th :: [Int] -> Int -> Int
 find2020th l i
     | i+1 == 2020 = findNextNumber l
     | otherwise   = find2020th (l ++ [findNextNumber l]) (i+1)
+
+main :: IO ()
+main = do
+    input <- getLine
+    let start = read input :: [Int]
+    print $ find2020th start (length start)
