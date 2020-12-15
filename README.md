@@ -2,6 +2,8 @@
 
 My solutions to the Advent of Code 2020, for now done in Haskell (which means I skipped a bunch of days where just reading the input seemed like a huge pita).
 
+I've written a little bit about it, particularly from a perspective of further familiarizing myself with Haskell [on my blog](https://augustoqueiroz.com/blog/tech/2020/12/14/haskell-aoc.html)
+
 The Haskell solutions I've done so far will not take the raw input from AoC because, honestly, it was giving me too much of a headache trying to figure out how to read a list of numbers from the stdin. Instead the input needs to be reformatted such that it can be read in a line and parsed with `read input :: [String/Int]` (The type depending on the question).
 
 ### Reformat using vim
